@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3eef5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    padding: 0px;
+}
+
+.container {
+    text-align: center;
+    background-color: #9b59b6;
+    padding: 20 px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 90%;
+    max-width: 500px; 
+    margin: 0 auto;  
+}
+
+h1 {
+    color: #f0f0f1; /* Color lila */
+    margin-bottom: 20px;
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.time-box {
+    background-color: #f1ebf1; /* Color lila oscuro */
+    padding: 20px;
+    border-radius: 10px;
+    color: #070707;
+    font-size: 24px;
+    text-align: center;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-box span {
+    font-size: 36px;
+    display: block;
+    margin-bottom: 5px; /* Espacio entre el número y la palabra */
+}
+
+.message {
+    font-size: 18px;
+    color: #fcf8ff; /* Color lila */
+    margin-bottom: 20px;
+}
+
+.princess-container {
+    margin-top: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.video-link-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.video-link {
+    font-size: 18px;
+    color: #6a0dad; /* Color lila */
+    text-decoration: none;
+    background-color: #f3e5f5;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.video-link:hover {
+    background-color: #d1c4e9;
+}
+
+    

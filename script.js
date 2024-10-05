@@ -24,3 +24,26 @@ const countdown = setInterval(function() {
     }
 }, 1000);
 
+// Obtener el elemento de video
+var video = document.getElementById("videoElement");
+
+// Añadir evento de clic para expandir el video
+video.addEventListener('click', function() {
+    // Si el video no está en pantalla completa, lo ponemos en fullscreen
+    if (!video.classList.contains('fullscreen')) {
+        video.classList.add('fullscreen');
+    } else {
+        // Si está en fullscreen, lo volvemos a su tamaño original
+        video.classList.remove('fullscreen');
+    }
+});
+
+// Detectar cambio de orientación en dispositivos móviles
+window.addEventListener("orientationchange", function() {
+    // Si el dispositivo está en horizontal
+    if (window.orientation === 90 || window.orientation === -90) {
+        video.classList.add('fullscreen'); // Forzamos fullscreen en horizontal
+    } else {
+        video.classList.remove('fullscreen'); // Volver al tamaño original en vertical
+    }
+});

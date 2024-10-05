@@ -23,3 +23,4 @@ const countdown = setInterval(function() {
         document.getElementById("countdown").innerHTML = "¡El gran día ha llegado!";
     }
 }, 1000);
+
